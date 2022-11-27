@@ -1,0 +1,7 @@
+sudo: required
+services:
+  - docker
+
+script: 
+  - docker build -t docker4dev/node .
+  - docker images docker4dev/node
